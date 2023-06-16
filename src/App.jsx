@@ -12,11 +12,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<ItemListContainer greeting="Hola a todos" />}
+            element={<ItemListContainer greeting=" NUESTRA TIENDA" />}
           />
           <Route
             path="/category/:categoryId"
-            element={<ItemListContainer greeting="Hola a todos" />}
+            element={<ItemListContainer greeting="" />}
           />
           <Route path="/item/:itemId" element={<ItemDetailContainer />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />

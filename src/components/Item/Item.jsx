@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Item.css";
 
 const Item = ({ id, name, img, price, stock }) => {
@@ -15,9 +16,9 @@ const Item = ({ id, name, img, price, stock }) => {
         <p className="Info">Stock: {stock}</p>
       </section>
       <footer className="ItemFooter">
-        <link to={`/item/${id}`} className="option">
-          Ver talle
-        </link>
+        <Link to={`/item/${id}`} className="option">
+          Ver detalle
+        </Link>
       </footer>
     </article>
   );

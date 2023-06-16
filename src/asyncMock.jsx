@@ -11,6 +11,7 @@ const products = [
     stock: 100,
     Description:
       "Biscochuelo de chocolate relleno de dos capas de crema fresca y cerezas amarenas",
+    categoryId: "clasicas",
   },
   {
     id: "2",
@@ -20,6 +21,7 @@ const products = [
     stock: 100,
     Description:
       "Biscocuelo de vainilla de 3 capas relleno de crema chantilly y pastelera de banana",
+    categoryId: "tortas",
   },
   {
     id: "3",
@@ -29,6 +31,7 @@ const products = [
     stock: 100,
     Description:
       "Biscochuelo de chocolate intenso de tres capas con forma de corazón, relleno con praline de avellanas y crema fresca",
+    categoryId: "especiales",
   },
 ];
 
@@ -39,6 +42,7 @@ export const getProducts = () => {
     }, 500);
   });
 };
+
 export const getProductById = (productId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -46,6 +50,7 @@ export const getProductById = (productId) => {
     }, 500);
   });
 };
+
 export const getProductByCategory = (categoryId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
